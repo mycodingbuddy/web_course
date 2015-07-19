@@ -4,7 +4,7 @@ platform='unknown'
 unamestr=`uname`
 if [[ "$unamestr" == 'Linux' ]]; then
     platform='linux'
-elif [[ "$unamestr" == 'MacOS' ]]; then
+elif [[ "$unamestr" == 'Darwin' ]]; then
     platform='macos'
 fi
 
