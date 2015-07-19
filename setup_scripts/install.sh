@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 platform='unknown'
 unamestr=`uname`
@@ -37,7 +37,7 @@ elif [[ $platform == 'macos' ]]; then
     # install pip
     brew install pip
     # install mysql client dev
-    brew  install libmysqlclient-dev
+    brew install mysql_server 
     # install virtualenvwrapper so we can create a virtual environment
     pip install virtualenvwrapper
     # active virtualenv commands
@@ -47,7 +47,7 @@ elif [[ $platform == 'macos' ]]; then
     # switch to the created virtual environment
     workon eventbuddy_env
     # install all required python packages within the virtual environment
-    pip install -i ../requirements.txt
+    pip install -r ../requirements.txt
 
     echo "Done..."
 
