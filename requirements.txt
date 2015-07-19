@@ -1,0 +1,10 @@
+virtualenvwrapper
+flask
+flask-login
+flask-openid
+flask-sqlalchemy
+flask-wtf
+pymysql
+flask_whooshalchemy
+python-dateutil
+rauth
